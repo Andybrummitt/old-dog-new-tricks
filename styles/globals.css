@@ -1,9 +1,27 @@
-html,
-body {
-  padding: 0;
+/* GOOGLE FONTS IMPORTS */
+
+/* MAIN FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* TITLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+:root {
+  --yellow: #FFE74C;
+  --dark-blue: #38618C;
+  --light-blue: #35A7FF;
+  --red: #FF5964;
+  --title-font: 'Sora', sans-serif;
+  --main-font: 'Poppins', sans-serif;
+}
+
+*,
+*:before,
+*:after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
 }
 
 a {
@@ -11,16 +29,3 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
